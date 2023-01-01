@@ -1,0 +1,95 @@
+.light {
+    color: var(--color-w);
+}
+.g1 {
+    color: var(--color-g1);
+}
+.g2 {
+    color: var(--color-g2);
+}
+.g3 {
+    color: var(--color-g3);
+}
+.dark {
+    color: var(--color-b);
+}
+.small {
+    font-size: 12px;
+}
+
+.link {
+    width: max-content;
+}
+.underline-hover:hover {
+    text-decoration: underline;
+}
+
+.img-fit {
+    width: 100%;
+}
+
+.text-justify {
+    text-align: justify;
+}
+.text-align-right {
+    display: block;
+    text-align: end;
+}
+.flex-justify-right {
+    margin-left: auto;
+}
+@media only screen and (max-width: 768px) {
+    .fjr-resize-fix {
+        margin-left: 0px;
+    }
+}
+
+.no-margin {
+    margin: 0px;
+}
+.no-top-margin {
+    margin-top: 0px;
+}
+.no-bottom-margin {
+    margin-bottom: 0px;
+}
+.no-left-margin {
+    margin-left: 0px;
+}
+.no-right-margin {
+    margin-right: 0px;
+}
+
+.no-left-padding {
+    padding-left: 0px;
+}
+.no-right-padding {
+    padding-right: 0px;
+}
+
+
+.g1-hover:hover {
+    color: var(--color-g1)
+}
+.g2-hover:hover {
+    color: var(--color-g2)
+}
+.g3-hover:hover {
+    color: var(--color-g3);
+}
+.dark-hover:hover {
+    color: var(--color-b);
+}
+.g1-bg-hover:hover {
+    background-color: var(--color-g1);
+}
+.g2-bg-hover:hover {
+    background-color: var(--color-g2);
+}
+.dark-bg-hover:hover {
+    background-color: var(--color-b);
+}
+.g1-hover, .g2-hover, .g3-hover, .dark-hover,
+.g1-bg-hover, .g2-bg-hover, .dark-bg-hover {
+    cursor: pointer;
+}

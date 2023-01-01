@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/variables.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="/styles/single-attributes.css">
+    <title>Sepehr Naserinia - About Me</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-1">
+            <a class="brand light g1-hover" href="/">Sepehr</a>
+            <div class="menu flex-justify-right" onclick="toggleShowHide('nav-2')">
+                <svg width="24" height="24" viewBox="0 0 122.88 95.95" style="enable-background:new 0 0 122.88 95.95" xml:space="preserve"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path class="icon-prop menu-hover-fill" d="M8.94,0h105c4.92,0,8.94,4.02,8.94,8.94l0,0c0,4.92-4.02,8.94-8.94,8.94h-105C4.02,17.88,0,13.86,0,8.94l0,0 C0,4.02,4.02,0,8.94,0L8.94,0z M8.94,78.07h105c4.92,0,8.94,4.02,8.94,8.94l0,0c0,4.92-4.02,8.94-8.94,8.94h-105 C4.02,95.95,0,91.93,0,87.01l0,0C0,82.09,4.02,78.07,8.94,78.07L8.94,78.07z M8.94,39.03h105c4.92,0,8.94,4.02,8.94,8.94l0,0 c0,4.92-4.02,8.94-8.94,8.94h-105C4.02,56.91,0,52.89,0,47.97l0,0C0,43.06,4.02,39.03,8.94,39.03L8.94,39.03z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="nav-2 flex-justify-right fjr-resize-fix show">
+            <a class="nav-link light dark-hover g1-bg-hover" href="/#">Home</a>
+            <a class="nav-link light dark-hover g1-bg-hover" href="/About">About</a>
+            <a class="nav-link light dark-hover g1-bg-hover" href="/Projects">Projects</a>
+        </div>
+    </nav>
+
+    <div class="about">
+        <div class="about-head">
+            <div class="about-head-pfp">
+                <img class="about-profile-img" alt="Profile-Picture" src="/database/Profile.jpg" />
+            </div>
+            <div class="about-head-info">
+                <h1 class="about-head-title">About Me</h1>
+                <p class="about-head-desc">
+                    I am a well-organized and meticulous person, it is something I incorporate in my programming by following syntax rules and naming conventions.
+                    <br/><br/>
+                    Teaching and sharing my knowledge brings me tremendous joy, I have taught four classes as a Teaching Assistant. I believe an important quality for a good teacher is breaking down the problem to its building components and carefully explaining each section.
+                </p>
+            </div>            
+        </div>
+        <div class="about-body">
+            <div class="column column-start">
+                <div class="about-box about-box-1 hide">
+                    <h2 class="about-box-title" onclick="toggleAboutBoxSettings('about-box-1')">Education</h2>
+                    <div class="about-box-dropdown">
+                        <h3 class="about-box-name">Bachelor</h3>
+                        <p class="about-box-desc">I have Bachelor of Science in Electrical Engineering from Shahrood University of Technology.<br/><strong class="text-align-right">GPA: 3.5/4</strong></p>
+                    </div>
+                </div>
+                <div class="about-box about-box-2 hide">
+                    <h2 class="about-box-title" onclick="toggleAboutBoxSettings('about-box-2')">Teaching Assistant</h2>
+                    <div class="about-box-dropdown">
+                        <h3 class="about-box-name">C Programming for Beginners</h3>
+                        <p class="about-box-desc about-seprator">Two C programming classes</p>
+                        <h3 class="about-box-name">Advanced C++ Programming</h3>
+                        <p class="about-box-desc about-seprator">Object Oriented Programming, MFC Application and OpenCV</p>
+                        <h3 class="about-box-name">Machine Learning with Python</h3>
+                        <p class="about-box-desc">Machine Learning using Python and TensorFlow module</p>
+                    </div>
+                </div>
+                <div class="about-box about-box-3 hide">
+                    <h2 class="about-box-title" onclick="toggleAboutBoxSettings('about-box-3')">Courses</h2>
+                    <div class="about-box-dropdown">
+                        <h3 class="about-box-name">Neural Network</h3>
+                        <p class="about-box-desc about-seprator">I took Neural Network course with graduate students.</p>
+                        <h3 class="about-box-name">Machine Learning with Python</h3>
+                        <p class="about-box-desc about-seprator">I learned Machine Learning using Python and trained image files using OpenCV library and TensorFlow.</p>
+                        <h3 class="about-box-name">Advanced C++ Programming</h3>
+                        <p class="about-box-desc">I learned object oriented programming using C++ and programmed MFC applications and worked with OpenCV library.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column column-middle">
+                <div class="about-box about-box-4 hide">
+                    <h2 class="about-box-title" onclick="toggleAboutBoxSettings('about-box-4')">Work Experience</h2>
+                    <div class="about-box-dropdown">
+                        <h3 class="about-box-name">Image Processing</h3>
+                        <p class="about-box-desc">I worked on a project to detect water from pipe output and calculate its flow rate.</p>
+                    </div>
+                </div>
+                <div class="about-box about-box-5 hide">
+                    <h2 class="about-box-title" onclick="toggleAboutBoxSettings('about-box-5')">Programming</h2>
+                    <div class="about-box-dropdown">
+                        <h3 class="about-box-name">C</h3>
+                        <p class="about-box-desc about-seprator">5 years of C programming experience. Including microprocessor programming for ATMEGA32.</p>
+                        <h3 class="about-box-name">C++</h3>
+                        <p class="about-box-desc about-seprator">I am a proficient C++ programmer. I have designed computer applications using MFC tool.</p>
+                        <h3 class="about-box-name">Python</h3>
+                        <p class="about-box-desc about-seprator">I am a self-taught python developer, I have experience on working with TensorFlow module.</p>
+                        <h3 class="about-box-name">HTML/CSS</h3>
+                        <p class="about-box-desc">New to HTML and CSS programming.</p>
+                    </div>
+                </div>
+                <div class="about-box about-box-6 hide">
+                    <h2 class="about-box-title" onclick="toggleAboutBoxSettings('about-box-6')">Software</h2>
+                    <div class="about-box-dropdown">
+                        <ul>
+                            <li class="about-box-list">VS Code</li> 
+                            <li class="about-box-list">Visual Studio</li>
+                            <li class="about-box-list">Atmel Studio</li>
+                            <li class="about-box-list">Proteus</li>
+                            <li class="about-box-list">MATLAB</li>
+                            <li class="about-box-list">Microsoft Word</li>
+                            <li class="about-box-list">Microsoft Excel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="column column-end">
+                <div class="about-box about-box-7 hide">
+                    <h2 class="about-box-title" onclick="toggleAboutBoxSettings('about-box-7')">Languages</h2>
+                    <div class="about-box-dropdown">
+                        <h3 class="about-box-name">Persian</h3>
+                        <p class="about-box-desc about-seprator">My native language is Persian.</p>
+                        <h3 class="about-box-name">English</h3>
+                        <p class="about-box-desc">I have professional proficiency in English.<br/><a class="small underline-hover" href="https://www.efset.org/cert/4if5ig" target="_blank">EF SET Certificate</a></p>
+                    </div>
+                </div>
+                <div class="about-box about-box-8 hide">
+                    <h2 class="about-box-title" onclick="toggleAboutBoxSettings('about-box-8')">Hobbies</h2>
+                    <div class="about-box-dropdown">
+                        <h3 class="about-box-name">Books</h3>
+                        <p class="about-box-desc about-seprator">I frequently read books. One Piece is the best in my chart!</p>
+                        <h3 class="about-box-name">Music</h3>
+                        <p class="about-box-desc">I love Music! Whether it's pop, classic, jazz, country or rock. I listen to it.<br/>Reggae is one of my new favorite genres.</p>
+                    </div>
+                </div>
+                <div class="about-box about-box-9 hide">
+                    <h2 class="about-box-title" onclick="toggleAboutBoxSettings('about-box-9')">Sports</h2>
+                    <div class="about-box-dropdown">
+                        <ul>
+                            <li class="about-box-list">GYM</li> 
+                            <li class="about-box-list">Swimming</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo-container">
+            <a class="logo-link" href="https://github.com/sepehrnaserinia" target="_blank">
+                <svg class="logo" width="32" height="32" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                    <title>Sepehr on Github</title>
+                    <path class="icon-prop" transform="scale(64)" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"/>
+                </svg>
+            </a>
+            <a class="logo-link" href="https://linkedin.com/in/sepehrnaserinia" target="_blank">
+                <svg class="logo" width="32" height="32" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
+                    <title>Sepehr on LinkedIn</title>
+                    <path class="icon-prop" d="M579.999 0H60C27 0 0 27 0 60v520c0 33 27 60 60 60h519.999c33 0 60-27 60-60V60c0-33-27-60-60-60zM239.991 519.999h-79.985V239.992h79.985v280.007zm-40.004-320.012c-22.11 0-39.993-17.882-39.993-39.993 0-22.122 17.882-40.004 39.993-40.004 22.122 0 40.004 17.882 40.004 40.004 0 22.11-17.882 39.993-40.004 39.993zm320.012 320.012h-79.986V360.005c0-22.122-17.893-40.004-40.004-40.004-22.122 0-40.004 17.882-40.004 40.004v159.994h-80.01V239.992h80.01v49.642c16.476-22.654 41.752-49.642 69.993-49.642 49.76 0 90 44.764 90 100.005v180.002z"/>
+                </svg>
+            </a>
+            <a class="logo-link"  href="mailto:sepehrnaserinia@gmail.com">
+                <svg class="logo" width="32" height="32" viewBox="0 0 122.88 122.88" xmlns="http://www.w3.org/2000/svg">
+                    <title>Mail to Sepehr</title>
+                    <path class="icon-prop" d="M25.2,0H97.68a25.27,25.27,0,0,1,25.2,25.2V97.68a25.27,25.27,0,0,1-25.2,25.2H25.2A25.27,25.27,0,0,1,0,97.68V25.2A25.27,25.27,0,0,1,25.2,0Zm4.1,37.59L62,64.26,93.33,37.59ZM27.19,82.48l23.3-23.37-23.3-19V82.48ZM53.06,61.21,29,85.29H93.65l-23-24.08-7.57,6.45h0a1.66,1.66,0,0,1-2.12,0l-7.94-6.48ZM73.2,59.07,95.69,82.66V39.9L73.2,59.07Z"/>
+                </svg>
+            </a>
+        </div>  
+        <p class="email-address small light dark-hover" onclick="copyToClipboard('sepehrnaserinia@gmail.com')" title="Copy to Clipboard">Email: seperhnaserinia@gmail.com</p>
+        <p class="copyright small light flex-justify-right fjr-resize-fix">Designed by Sepehr Naserinia</p>
+    </footer>
+
+    <div class="copy-box hide"><p class="copy-box-msg">Copied!</p></div>
+    
+    <script src="/components/main.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

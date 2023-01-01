@@ -1,0 +1,143 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 85vh;
+    padding: 50px 12%;
+    background-color: var(--color-w);
+}
+.about-head {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.about-head-pfp, .about-profile-img {
+    width: 250px;
+    height: 250px;
+    margin: 0px;
+    border-radius: 50%;
+}
+.about-head-pfp {
+    margin: 16px;
+}
+.about-head-info {
+    width: 100%;
+    margin: 0px 16px 0px;
+}
+.about-head-title {
+    margin: 10px 0px;
+    color: var(--color-b);
+}
+.about-head-desc {
+    max-width: 500px;
+    margin: 10px 0px;
+    text-align: justify;
+    color: var(--color-b);
+}
+
+.about-body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    max-width: 500px;
+    background-color: var(--color-g1);
+    border-radius: 8px;
+}
+.column-start {
+    margin: 10px;
+    margin-left: 0px;
+}
+.column-middle {
+    margin: 10px;
+}
+.column-end {
+    margin: 10px;
+    margin-right: 0px;
+}
+
+.about-box {
+    display: flex;
+    flex-direction: column;
+}
+.about-box-title {
+    background-color: var(--color-g2);
+    border-radius: 8px;
+    margin: 8px;
+    padding: 12px;
+    text-align: center;
+    color: var(--color-g3);
+    cursor: pointer;
+}
+.about-box-title.show {
+    background-color: var(--color-w);
+}
+.about-box-dropdown {
+    display: none;
+    flex-direction: column;
+}
+.about-box-dropdown.show {
+    display: flex;
+}
+.about-box-name {
+    margin: 4px 8px;
+    padding: 0px 12px;
+    font-size: 20px;
+    color: var(--color-b);
+}
+.about-box-desc {
+    margin: 4px 8px;
+    padding: 0px 12px;
+    padding-bottom: 8px;
+    text-align: justify;
+    color: var(--color-b);
+}
+.about-seprator {
+    border-bottom: 2px solid var(--color-g2);
+}
+.about-box-list {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+@media only screen and (min-width:992px) and (max-width: 1280px) {
+    .about-body {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .column {
+        width: 45%;
+        margin: 10px;
+    }
+    .column-end {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 650px;
+        justify-content: space-around;
+    }
+    .column-end > div {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .about-head, .about-body {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-head-info {
+        width: auto;
+    }
+    .column {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
