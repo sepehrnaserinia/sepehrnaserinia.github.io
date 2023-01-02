@@ -20,12 +20,12 @@
     font-size: 18px;
     color: var(--color-b);
 }
-.content-sidebar h2 {
+.content-sidebar-title {
     margin: 10px;
     font-size: 32px;
     color: var(--color-b);
 }
-.content-sidebar ul {
+.content-sidebar-list {
     font-size: 20px;
 }
 
@@ -34,6 +34,9 @@
     .content {
         padding-left: 10%;
         padding-right: 10%;
+    }
+    .content-sidebar-list {
+        font-size: 18px;
     }
 }
 @media only screen and (max-width: 1200px) {
@@ -48,5 +51,15 @@
     }
     .content-body, .content-sidebar {
         width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .content-body p {
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 16px;
+    }
+    .content-sidebar-list {
+        font-size: 16px;
     }
 }

@@ -107,6 +107,12 @@
 }
 
 
+@media only screen and (max-width: 1200px) {
+    .about {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
 @media only screen and (min-width:992px) and (max-width: 1280px) {
     .about-body {
         flex-wrap: wrap;

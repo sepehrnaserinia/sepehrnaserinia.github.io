@@ -37,8 +37,8 @@
 @media only screen and (max-width: 992px) {
     .pnf-flex {
         flex-direction: column;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 12%;
+        margin-right: 12%;
     }
     .pnf-image-box, .pnf-image, .pnf-error {
         width: 100%;
@@ -49,5 +49,11 @@
     }
     .pnf-image-box {
         order: 2;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .pnf-flex {
+        margin-left: 8%;
+        margin-right: 8%;
     }
 }
