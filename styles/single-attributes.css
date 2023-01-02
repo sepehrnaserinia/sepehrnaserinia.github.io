@@ -38,11 +38,6 @@
 .flex-justify-right {
     margin-left: auto;
 }
-@media only screen and (max-width: 768px) {
-    .fjr-resize-fix {
-        margin-left: 0px;
-    }
-}
 
 .no-margin {
     margin: 0px;
@@ -92,4 +87,14 @@
 .g1-hover, .g2-hover, .g3-hover, .dark-hover,
 .g1-bg-hover, .g2-bg-hover, .dark-bg-hover {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .fjr-resize-fix {
+        margin-left: 0px;
+    }
+    .no-side-margin-small-disp { 
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
